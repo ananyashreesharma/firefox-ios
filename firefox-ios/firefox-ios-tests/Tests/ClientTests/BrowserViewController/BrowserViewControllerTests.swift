@@ -522,7 +522,81 @@ class BrowserViewControllerTests: XCTestCase, StoreTestUtility {
         XCTAssertNil(recordVisitManager.lastVisitObservation)
     }
 
+    // MARK: - updateInContentHomePanel
+
+    @MainActor
+    func testUpdateInContentHomePanel_certErrorURL_showsNativeErrorPage() {
+        setupNimbusNativeErrorPageTesting(isEnabled: true,
+                                          noInternetConnectionErrorIsEnabled: true,
+                                          otherErrorPagesIsEnabled: true)
+        let subject = createSubject()
+
+        let certErrorURL = URL(
+            string: "internal://local/errorpage?url=https%3A%2F%2Fexample.com&code=\(NSURLErrorServerCertificateUntrusted)"
+        )!
+        subject.updateInContentHomePanel(certErrorURL)
+
+        XCTAssertEqual(browserCoordinator.showNativeErrorPageCalled, 1)
+    }
+
+    @MainActor
+    func testUpdateInContentHomePanel_certBadDateURL_showsNativeErrorPage() {
+        setupNimbusNativeErrorPageTesting(isEnabled: true,
+                                          noInternetConnectionErrorIsEnabled: true,
+                                          otherErrorPagesIsEnabled: true)
+        let subject = createSubject()
+
+        let certErrorURL = URL(
+            string: "internal://local/errorpage?url=https%3A%2F%2Fexample.com&code=\(NSURLErrorServerCertificateHasBadDate)"
+        )!
+        subject.updateInContentHomePanel(certErrorURL)
+
+        XCTAssertEqual(browserCoordinator.showNativeErrorPageCalled, 1)
+    }
+
+    @MainActor
+    func testUpdateInContentHomePanel_certErrorURL_whenFlagDisabled_doesNotShowNativeErrorPage() {
+        setupNimbusNativeErrorPageTesting(isEnabled: true,
+                                          noInternetConnectionErrorIsEnabled: true,
+                                          otherErrorPagesIsEnabled: false)
+        let subject = createSubject()
+
+        let certErrorURL = URL(
+            string: "internal://local/errorpage?url=https%3A%2F%2Fexample.com&code=\(NSURLErrorServerCertificateUntrusted)"
+        )!
+        subject.updateInContentHomePanel(certErrorURL)
+
+        XCTAssertEqual(browserCoordinator.showNativeErrorPageCalled, 0)
+    }
+
+    @MainActor
+    func testUpdateInContentHomePanel_nonCertErrorURL_doesNotShowNativeErrorPage() {
+        setupNimbusNativeErrorPageTesting(isEnabled: true,
+                                          noInternetConnectionErrorIsEnabled: true,
+                                          otherErrorPagesIsEnabled: true)
+        let subject = createSubject()
+
+        let regularURL = URL(string: "https://www.mozilla.org")!
+        subject.updateInContentHomePanel(regularURL)
+
+        XCTAssertEqual(browserCoordinator.showNativeErrorPageCalled, 0)
+    }
+
     // MARK: - Private
+
+    private func setupNimbusNativeErrorPageTesting(
+        isEnabled: Bool,
+        noInternetConnectionErrorIsEnabled: Bool,
+        otherErrorPagesIsEnabled: Bool
+    ) {
+        FxNimbus.shared.features.nativeErrorPageFeature.with { _, _ in
+            return NativeErrorPageFeature(
+                enabled: isEnabled,
+                noInternetConnectionError: noInternetConnectionErrorIsEnabled,
+                otherErrorPages: otherErrorPagesIsEnabled
+            )
+        }
+    }
 
     private func createSubject(file: StaticString = #filePath,
                                line: UInt = #line) -> BrowserViewController {
