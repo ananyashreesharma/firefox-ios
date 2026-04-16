@@ -64,6 +64,9 @@
 /* Label used as an item in Settings screen. When touched, it will take user to address autofill settings page to that will allow user to add or modify saved addresses to allow for autofill in a webpage. */
 "Settings.AddressAutofill.Title.v126" = "Adresoj";
 
+/* In the settings menu, in the General section, this is the title for the AI Controls settings section */
+"Settings.AIControls.Title.v150" = "Regiloj de AI";
+
 /* Section description in Appearance settings for middle button configuration of the bottom toolbar. */
 "Settings.Appearance.NavigationToolbar.Description.v145" = "Tio ĉi ŝanĝas la butonon centre de la ilaro.";
 
@@ -263,7 +266,7 @@
 "Settings.Summarize.FooterTitle.v142" = "Tio provizas aliron al resumoj de paĝoj.";
 
 /* This is the footer text for the gestures features under the Summarize settings section. */
-"Settings.Summarize.GesturesSection.FooterTitle.v142" = "Skuu vian aparanto ambaŭflanken por resumi paĝon.";
+"Settings.Summarize.GesturesSection.FooterTitle.v142" = "Skuu vian aparaton ambaŭflanken por resumi paĝon.";
 
 /* This is the title for the setting that toggles the Shake Gesture feature under the Summarize settings section. */
 "Settings.Summarize.GesturesSection.ShakeGestureTitle.v142" = "Skui por resumi";
