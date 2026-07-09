@@ -2365,10 +2365,10 @@
 		FF0001AB2F000007000AAAAA /* WorldCupMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0001AB2F000004000AAAAA /* WorldCupMiddleware.swift */; };
 		FF0002AA2F000002000BBBBB /* ClearablesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0002AA2F000001000BBBBB /* ClearablesTests.swift */; };
 		FF0003AB2F000002000BBBBB /* WorldCupMiddlewareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0003AA2F000001000BBBBB /* WorldCupMiddlewareTests.swift */; };
-		FFCAFE022F0000AB000BBBBB /* WorldCupMatchCardViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCAFE012F0000AA000BBBBB /* WorldCupMatchCardViewTests.swift */; };
 		FF0003AD2F000004000BBBBB /* WorldCupCellFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0003AC2F000003000BBBBB /* WorldCupCellFactoryTests.swift */; };
 		FF0004AB2F000002000BBBBB /* WorldCupSectionStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0004AA2F000001000BBBBB /* WorldCupSectionStateTests.swift */; };
 		FF0005AB2F000002000BBBBB /* MockWorldCupStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0005AA2F000001000BBBBB /* MockWorldCupStore.swift */; };
+		FFCAFE022F0000AB000BBBBB /* WorldCupMatchCardViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCAFE012F0000AA000BBBBB /* WorldCupMatchCardViewTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -5121,6 +5121,9 @@
 		4343A5D82EE1A3E2002FE739 /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/Translations.strings; sourceTree = "<group>"; };
 		4343BBBD2BE8F3280082F853 /* hsb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hsb; path = hsb.lproj/Microsurvey.strings; sourceTree = "<group>"; };
 		434421202ECF3011008261C5 /* ka */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ka; path = ka.lproj/RelayMask.strings; sourceTree = "<group>"; };
+		43446CC92FFFDF7C0043CBE2 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/ReaderModeBar.strings; sourceTree = "<group>"; };
+		43446CCA2FFFDF7C0043CBE2 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/RelayMask.strings; sourceTree = "<group>"; };
+		43446CCB2FFFDF7C0043CBE2 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/WorldCup.strings; sourceTree = "<group>"; };
 		43446CEF2412DDBE00F5C643 /* UpdateViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateViewModelTests.swift; sourceTree = "<group>"; };
 		4344A4EB2A124A150024B813 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/FirefoxSync.strings; sourceTree = "<group>"; };
 		4344A4EC2A124A150024B813 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/Notification.strings; sourceTree = "<group>"; };
@@ -5989,6 +5992,8 @@
 		436FC6A82A3734F30010789D /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Footer.strings; sourceTree = "<group>"; };
 		436FC6A92A3734F30010789D /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/RememberCard.strings; sourceTree = "<group>"; };
 		436FC6AA2A3734F40010789D /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/UpdateCard.strings; sourceTree = "<group>"; };
+		436FD5F42FFFDFA800E8FBBC /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/ReaderModeBar.strings; sourceTree = "<group>"; };
+		436FD5F52FFFDFA800E8FBBC /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/WorldCup.strings; sourceTree = "<group>"; };
 		4370179D2A37351700D9003D /* kab */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = kab; path = kab.lproj/Footer.strings; sourceTree = "<group>"; };
 		4370179E2A37351700D9003D /* kab */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = kab; path = kab.lproj/RememberCard.strings; sourceTree = "<group>"; };
 		4370179F2A37351700D9003D /* kab */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = kab; path = kab.lproj/UpdateCard.strings; sourceTree = "<group>"; };
@@ -7327,6 +7332,11 @@
 		43BB2EE62ADD51EE00C5B64D /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/SelectCreditCard.strings; sourceTree = "<group>"; };
 		43BB2EE72ADD51EE00C5B64D /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/Share.strings; sourceTree = "<group>"; };
 		43BB2EE82ADD51EE00C5B64D /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/TabLocation.strings; sourceTree = "<group>"; };
+		43BB4BD72FFFE1ED00BF73E2 /* rm */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = rm; path = rm.lproj/ReaderModeBar.strings; sourceTree = "<group>"; };
+		43BB4BD82FFFE1ED00BF73E2 /* rm */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = rm; path = rm.lproj/RelayMask.strings; sourceTree = "<group>"; };
+		43BB4BD92FFFE1ED00BF73E2 /* rm */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = rm; path = rm.lproj/SearchZero.strings; sourceTree = "<group>"; };
+		43BB4BDA2FFFE1ED00BF73E2 /* rm */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = rm; path = rm.lproj/Translations.strings; sourceTree = "<group>"; };
+		43BB4BDB2FFFE1ED00BF73E2 /* rm */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = rm; path = rm.lproj/WorldCup.strings; sourceTree = "<group>"; };
 		43BB5D082C298F8D00854682 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/ActivityStream.strings; sourceTree = "<group>"; };
 		43BB5D092C298F8D00854682 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/AddressToolbar.strings; sourceTree = "<group>"; };
 		43BB76D829C87A5A00087F41 /* zh-CN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-CN"; path = "zh-CN.lproj/Alert.strings"; sourceTree = "<group>"; };
@@ -11872,7 +11882,6 @@
 		FF0001AB2F000004000AAAAA /* WorldCupMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCupMiddleware.swift; sourceTree = "<group>"; };
 		FF0002AA2F000001000BBBBB /* ClearablesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearablesTests.swift; sourceTree = "<group>"; };
 		FF0003AA2F000001000BBBBB /* WorldCupMiddlewareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCupMiddlewareTests.swift; sourceTree = "<group>"; };
-		FFCAFE012F0000AA000BBBBB /* WorldCupMatchCardViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCupMatchCardViewTests.swift; sourceTree = "<group>"; };
 		FF0003AC2F000003000BBBBB /* WorldCupCellFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCupCellFactoryTests.swift; sourceTree = "<group>"; };
 		FF0004AA2F000001000BBBBB /* WorldCupSectionStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCupSectionStateTests.swift; sourceTree = "<group>"; };
 		FF0005AA2F000001000BBBBB /* MockWorldCupStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWorldCupStore.swift; sourceTree = "<group>"; };
@@ -11884,6 +11893,7 @@
 		FF8D4A9183688EA96AFBB608 /* ro */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ro; path = ro.lproj/ClearHistoryConfirm.strings; sourceTree = "<group>"; };
 		FFA94EF3A2E3DC24A014D4B2 /* ga */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ga; path = ga.lproj/ErrorPages.strings; sourceTree = "<group>"; };
 		FFC049AA898EF4096E22F595 /* es-CL */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-CL"; path = "es-CL.lproj/ClearHistoryConfirm.strings"; sourceTree = "<group>"; };
+		FFCAFE012F0000AA000BBBBB /* WorldCupMatchCardViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCupMatchCardViewTests.swift; sourceTree = "<group>"; };
 		FFEB4308B5A82E56F1EEEC56 /* oc */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = oc; path = oc.lproj/AuthenticationManager.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -21931,6 +21941,9 @@
 				43EFBADE2FB5EDA900982AFE /* sr */,
 				43F7A0F52FBF2E08004E4FFF /* ko */,
 				43010A1A2FBF2F6500134AA1 /* ug */,
+				43446CCB2FFFDF7C0043CBE2 /* ca */,
+				436FD5F52FFFDFA800E8FBBC /* da */,
+				43BB4BDB2FFFE1ED00BF73E2 /* rm */,
 			);
 			name = WorldCup.strings;
 			sourceTree = "<group>";
@@ -23315,6 +23328,7 @@
 				43346B892F93DBCC004A845F /* pl */,
 				43A21CE82FA37A0500F6C598 /* tt */,
 				439B771B2FAC880F00E9F9E4 /* es */,
+				43BB4BD92FFFE1ED00BF73E2 /* rm */,
 			);
 			name = SearchZero.strings;
 			path = "Shared/Supporting Files";
@@ -24255,6 +24269,9 @@
 				439B77192FAC880F00E9F9E4 /* es */,
 				4342B23B2FB5ECA800676B5E /* km */,
 				433DE2CC2FB5ECDB001CAC13 /* ml */,
+				43446CC92FFFDF7C0043CBE2 /* ca */,
+				436FD5F42FFFDFA800E8FBBC /* da */,
+				43BB4BD72FFFE1ED00BF73E2 /* rm */,
 			);
 			name = ReaderModeBar.strings;
 			sourceTree = "<group>";
@@ -25658,6 +25675,8 @@
 				43346B882F93DBCC004A845F /* pl */,
 				43FA61532F9A3CD10065492B /* tt */,
 				439B771A2FAC880F00E9F9E4 /* es */,
+				43446CCA2FFFDF7C0043CBE2 /* ca */,
+				43BB4BD82FFFE1ED00BF73E2 /* rm */,
 			);
 			name = RelayMask.strings;
 			path = "Shared/Supporting Files";
@@ -26339,6 +26358,7 @@
 				43346B8F2F93DBCC004A845F /* pl */,
 				43A21CE92FA37A0500F6C598 /* tt */,
 				439B771F2FAC880F00E9F9E4 /* es */,
+				43BB4BDA2FFFE1ED00BF73E2 /* rm */,
 			);
 			name = Translations.strings;
 			path = "Shared/Supporting Files";
@@ -33251,7 +33271,6 @@
 		};
 		EDD09DC02FCF6AB20038C8FA /* ModifiedCopy */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = EDD09DBF2FCF6AB20038C8FA /* XCRemoteSwiftPackageReference "ModifiedCopyMacro" */;
 			productName = ModifiedCopy;
 		};
 		EDD2A7F72CDACE7C00ED464C /* UnifiedSearchKit */ = {
